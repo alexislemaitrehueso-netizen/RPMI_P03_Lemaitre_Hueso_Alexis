@@ -178,3 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49517a8fd9aead9439fa0c0b2077ad98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardStats
+  attack: 1
+  defense: 1
+  live: 1
