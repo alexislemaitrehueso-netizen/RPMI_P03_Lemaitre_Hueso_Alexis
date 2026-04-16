@@ -9,15 +9,18 @@ public class CardStats : MonoBehaviour
     [SerializeField, Tooltip("Vida de la Carta"), Range(1, 9)]
     private int live;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int GetAttack()
     {
-        
+        return attack;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int GetDefense() 
+    { 
+        return defense;
+    }
+
+    public int GetLive() 
     {
-        
+        return live;
     }
 }

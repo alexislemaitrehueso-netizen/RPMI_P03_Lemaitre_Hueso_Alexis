@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyCards : MonoBehaviour
 {
+    public bool inCombat;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

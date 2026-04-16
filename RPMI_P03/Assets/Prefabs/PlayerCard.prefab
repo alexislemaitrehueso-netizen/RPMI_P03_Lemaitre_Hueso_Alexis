@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320739528531898593, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 3.7385066
       objectReference: {fileID: 0}
     - target: {fileID: 320739528531898593, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.2065582
       objectReference: {fileID: 0}
     - target: {fileID: 320739528531898593, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68,19 +68,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCard
       objectReference: {fileID: 0}
+    - target: {fileID: 3101532335418258069, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3101532335418258069, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 8209507752179176846}
+    - targetCorrespondingSourceObject: {fileID: 3101532335418258069, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5484470346517245379}
   m_SourcePrefab: {fileID: 100100000, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
+--- !u!82 &5758692458188952333 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1980108539411296513, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
+  m_PrefabInstance: {fileID: 6093439007142781452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6234070620553414555 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 149709834815022487, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
+  m_PrefabInstance: {fileID: 6093439007142781452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9194913686341226649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3101532335418258069, guid: 49a27bb0c72302843ba6fbdd2c9fd140, type: 3}
   m_PrefabInstance: {fileID: 6093439007142781452}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &8209507752179176846
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194913686341226649}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &5484470346517245379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,3 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac0daa62193fc047b5f3ba1f28652af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCards
+  cogerAS: {fileID: 6234070620553414555}
+  soltarAS: {fileID: 5758692458188952333}
+  combatSystem: {fileID: 8083537706349593152, guid: 438b075da0a525141aaf0fcd8faaa748, type: 3}
